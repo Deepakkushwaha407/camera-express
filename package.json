@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "Nikon Camera Management App",
     "main": "app.js",
+    "engines": {
+        "node": ">=14.0.0"
+    },
     "scripts": {
         "start": "node app.js"
     },
