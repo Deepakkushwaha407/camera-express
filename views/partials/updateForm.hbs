@@ -1,0 +1,26 @@
+<div class="update-form">
+    <form action="/update" method="POST">
+        <input type="hidden" name="Pixel" value="{{camera.Pixel}}">
+        
+        <div class="form-group">
+            <label>Pixel: {{camera.Pixel}}</label>
+        </div>
+
+        <div class="form-group">
+            <label for="Sensor">Sensor:</label>
+            <input type="text" id="Sensor" name="Sensor" value="{{camera.Sensor}}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Lens">Lens:</label>
+            <input type="text" id="Lens" name="Lens" value="{{camera.Lens}}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Battery">Battery:</label>
+            <input type="text" id="Battery" name="Battery" value="{{camera.Battery}}" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update Camera</button>
+    </form>
+</div>

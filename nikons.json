@@ -1,0 +1,20 @@
+[
+  {
+    "Pixel": "30",
+    "Sensor": "CMOS",
+    "Lens": "24-80",
+    "Battery": "EL50"
+  },
+  {
+    "Pixel": "24",
+    "Sensor": "CMOS",
+    "Lens": "24-70",
+    "Battery": "EL80"
+  },
+  {
+    "Pixel": "48",
+    "Sensor": "CMOS",
+    "Lens": "24-70",
+    "Battery": "EL50"
+  }
+]

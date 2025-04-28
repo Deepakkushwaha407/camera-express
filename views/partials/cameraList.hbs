@@ -1,0 +1,32 @@
+<section class="camera-list">
+    <h2>Camera List</h2>
+    {{#if cameras.length}}
+    <table>
+        <thead>
+            <tr>
+                <th>Megapixels</th>
+                <th>Sensor</th>
+                <th>Lens</th>
+                <th>Battery</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each cameras}}
+            <tr>
+                <td>{{Pixel}} MP</td>
+                <td>{{Sensor}}</td>
+                <td>{{Lens}}</td>
+                <td>{{Battery}}</td>
+                <td>
+                    <button onclick="deleteCamera('{{Pixel}}')">Delete</button>
+                    <!-- Removed Edit link -->
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    {{else}}
+    <p>No cameras found.</p>
+    {{/if}}
+</section>

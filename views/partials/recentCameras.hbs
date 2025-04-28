@@ -1,0 +1,27 @@
+<section class="recent-cameras">
+    <h2>Recently Added Cameras</h2>
+    {{#if recentCameras.length}}
+    <table>
+        <thead>
+            <tr>
+                <th>Megapixels</th>
+                <th>Sensor</th>
+                <th>Lens</th>
+                <th>Battery</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each recentCameras}}
+            <tr>
+                <td>{{Pixel}} MP</td>
+                <td>{{Sensor}}</td>
+                <td>{{Lens}}</td>
+                <td>{{Battery}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    {{else}}
+    <p>No recent cameras added.</p>
+    {{/if}}
+</section>

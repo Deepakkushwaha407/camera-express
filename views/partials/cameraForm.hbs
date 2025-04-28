@@ -1,0 +1,22 @@
+<section class="add-camera">
+    <h2>{{formTitle}}</h2>
+    <form id="cameraForm">
+        <div class="form-group">
+            <label for="Pixel">Megapixel Count:</label>
+            <input type="text" id="Pixel" name="Pixel" value="{{camera.Pixel}}" required>
+        </div>
+        <div class="form-group">
+            <label for="Sensor">Sensor Type:</label>
+            <input type="text" id="Sensor" name="Sensor" value="{{camera.Sensor}}" required>
+        </div>
+        <div class="form-group">
+            <label for="Lens">Lens:</label>
+            <input type="text" id="Lens" name="Lens" value="{{camera.Lens}}" required>
+        </div>
+        <div class="form-group">
+            <label for="Battery">Battery:</label>
+            <input type="text" id="Battery" name="Battery" value="{{camera.Battery}}" required>
+        </div>
+        <button type="submit">{{buttonText}}</button>
+    </form>
+</section>
